@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1 style="font-family:Open Sans;">KJ DBS Share Price Prediction</h1>
+        <!-- Web Design: HTML, CSS and Javascript. JS is the only that can do front and back end -->
+        <!-- In networks, there are 4 dots. The last number is 0 to 255. For small families, 192.168.1.xxx -->
+        <!-- Google keeps 2 sets. The static IP and the 192.168.1.xxx -->
+        <!-- Jupyter uses 127.0.0.1 which routes back to you. Or 0.0.0.0 -->
+        <!-- For the backdoor, Jupyter uses 8888. SMTP uses 25. Flask uses 5000 -->
+        <!-- We have to remove the action later when deploying to cloud -->
+        <!-- The front end is HTML. We are taking the exchange rate (Front End) to back end -->
+        <!-- Then at the back we calculate and calculate. Then push it back to front end (show u on screen) -->
+        <!-- This is post -->
+        <form action="/" method="post">
+            <p style="font-family:Open Sans;">Enter the USD/SGD price:</p>
+            <!-- Whatever name is used here, the backend must use -->
+            <p><input type="number" step="0.001" name="rate" required></p>
+            <p><input type="submit" value="submit"></p>
+        </form>
+        <!-- AFter submission, it goes to 127.0.0.1 -->
+        <p style="font-family:Open Sans;">The predicted DBS share price is {{result}}</p>
+    </body>
+</html>
